@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#index.html">Página Inicial</a></li>
+        <li><a href="#Jogos">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Primeiro Nome</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname">Último nome</label>
+    <input type="text" id="lname" name="lastname">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Portugal</option>
+      <option value="canada">Espanha</option>
+      <option value="usa">França</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Escreva algo..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    <style>
+        body{
+            background-color: lightcyan; 
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          border: 1px solid #e7e7e7;
+          background-color: #f3f3f3;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: #666;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #ddd;
+        }
+        
+        li a.active {
+          color: white;
+          background-color: #4CAF50;
+        }
+                body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        .container {
+        border-radius: 5px;
+        background-color: lightcyan;
+        padding: 20px;
+        }
+        </style>
+</body>
+</html>
